@@ -1,0 +1,27 @@
+--Create a clothing store database.
+CREATE TABLE clothing (id INTEGER PRIMARY KEY, item_type TEXT, quantity INTEGER, price INTEGER, size TEXT); 
+
+INSERT INTO clothing VALUES (1, "socks", 4,23.99, "S");
+INSERT INTO clothing VALUES (2, "shoes", 7,1.99, "One_size");
+INSERT INTO clothing VALUES (3, "underwear", 4,2.99, "s,m");
+INSERT INTO clothing VALUES (4, "bras", 7,12.99, "s,m,l");
+INSERT INTO clothing VALUES (5, "loungewear", 4,12.50, "2");
+INSERT INTO clothing VALUES (6, "gloves", 10,5.80, "s");
+INSERT INTO clothing VALUES (7, "shirt", 23, 20, "m,l,xl");
+INSERT INTO clothing VALUES (8, "pants", 12, 45.00, "m");
+INSERT INTO clothing VALUES (9, "sandals", 78, 34.00, "m");
+INSERT INTO clothing VALUES (10, "dress", 24, 19.99, "m,l,xl");
+INSERT INTO clothing VALUES (11, "jacket", 29, 48.99, "s");
+INSERT INTO clothing VALUES (12, "sweater", 33, 29.99, "s,m,l");
+INSERT INTO clothing VALUES (13, "scarf", 14, 13.99, "one_size");
+INSERT INTO clothing VALUES (14, "belts", 9, 12.99, "s");
+INSERT INTO clothing VALUES (15, "jeans", 36, 34, "s,m,l,xl");
+
+--display the price order by price.
+SELECT * FROM clothing ORDER BY price; 
+
+--what is the minumum number per item 
+SELECT MIN(size) FROM clothing; 
+
+
+

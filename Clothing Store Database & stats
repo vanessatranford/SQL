@@ -17,10 +17,10 @@ INSERT INTO clothing VALUES (13, "scarf", 14, 13.99, "one_size");
 INSERT INTO clothing VALUES (14, "belts", 9, 12.99, "s");
 INSERT INTO clothing VALUES (15, "jeans", 36, 34, "s,m,l,xl");
 
---display the price order by price.
+--display the items order by price.
 SELECT * FROM clothing ORDER BY price; 
 
---what is the minumum number per item 
+--what is the minumum size from clothing. 
 SELECT MIN(size) FROM clothing; 
 
 
